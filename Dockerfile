@@ -22,6 +22,7 @@ RUN apt-get update \
  php5-curl \
  php5-gd \
  php5-xmlrpc \
+ php5-xsl \
  nodejs \
  ant \
  libfontconfig \
