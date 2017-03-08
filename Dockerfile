@@ -12,7 +12,7 @@ RUN apt-get update \
  ca-certificates \
  && curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add - \
  && echo "deb https://deb.nodesource.com/node_6.x jessie main" > /etc/apt/sources.list.d/nodesource.list \
-# Install tools
+ # Install tools
  && apt-get update \
  && apt-get install --no-install-recommends -y \
  openssh-client \
@@ -23,6 +23,7 @@ RUN apt-get update \
  php5-gd \
  php5-xmlrpc \
  nodejs \
+ ant \
  libfontconfig \
  && ln -f -s /usr/bin/nodejs /usr/bin/node \
  # Slim down image
