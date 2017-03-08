@@ -19,6 +19,7 @@ RUN apt-get update \
  bzip2 \
  git \
  php5-cli \
+ php5-curl \
  nodejs \
  && ln -f -s /usr/bin/nodejs /usr/bin/node \
  # Slim down image
