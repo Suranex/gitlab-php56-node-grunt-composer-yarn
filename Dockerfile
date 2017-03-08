@@ -20,6 +20,7 @@ RUN apt-get update \
  git \
  php5-cli \
  php5-curl \
+ php5-gd \
  nodejs \
  && ln -f -s /usr/bin/nodejs /usr/bin/node \
  # Slim down image
