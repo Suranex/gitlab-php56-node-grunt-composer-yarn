@@ -21,7 +21,9 @@ RUN apt-get update \
  php5-cli \
  php5-curl \
  php5-gd \
+ php5-xmlrpc \
  nodejs \
+ libfontconfig \
  && ln -f -s /usr/bin/nodejs /usr/bin/node \
  # Slim down image
  && apt-get clean \
