@@ -17,6 +17,7 @@ RUN apt-get update \
  && apt-get install --no-install-recommends -y \
  openssh-client \
  bzip2 \
+ rsync \
  git \
  php5-cli \
  php5-curl \
