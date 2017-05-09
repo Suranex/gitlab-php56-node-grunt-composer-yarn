@@ -12,6 +12,8 @@ RUN apt-get update \
  ca-certificates \
  && curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add - \
  && echo "deb https://deb.nodesource.com/node_6.x jessie main" > /etc/apt/sources.list.d/nodesource.list \
+ && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - \
+ && echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list \
  # Install tools
  && apt-get update \
  && apt-get install --no-install-recommends -y \
@@ -25,6 +27,7 @@ RUN apt-get update \
  php5-xmlrpc \
  php5-xsl \
  nodejs \
+ yarn \
  ant \
  libfontconfig \
  && ln -f -s /usr/bin/nodejs /usr/bin/node \
