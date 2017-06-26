@@ -39,6 +39,7 @@ RUN apt-get update \
 RUN php -v
 RUN node -v
 RUN npm -v
+RUN yarn version
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
