@@ -33,7 +33,6 @@ RUN apt-get update \
  yarn \
  ant \
  libfontconfig \
- && ln -f -s /usr/bin/nodejs /usr/bin/node \
  # Slim down image
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/man/?? /usr/share/man/??_*
