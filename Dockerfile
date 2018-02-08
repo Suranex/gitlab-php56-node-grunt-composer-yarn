@@ -1,6 +1,7 @@
 FROM debian:8.6
 MAINTAINER Florian Mueller <docker@flmue.de>
-# Let the conatiner know that there is no tty
+
+# Let the container know that there is no tty
 ENV DEBIAN_FRONTEND noninteractive
 ENV COMPOSER_NO_INTERACTION 1
 
@@ -24,6 +25,8 @@ RUN apt-get update \
  php5-cli \
  php5-curl \
  php5-gd \
+ php5-imagick \
+ php5-tidy \
  php5-xmlrpc \
  php5-xsl \
  nodejs \
