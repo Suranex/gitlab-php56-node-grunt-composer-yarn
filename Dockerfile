@@ -27,6 +27,7 @@ RUN apt-get update \
  php5-gd \
  php5-imagick \
  php5-tidy \
+ php5-xdebug \
  php5-xmlrpc \
  php5-xsl \
  nodejs \
