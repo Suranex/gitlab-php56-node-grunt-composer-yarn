@@ -46,6 +46,8 @@ RUN apt-get update \
  php5.6-zip \
  php-imagick \
  php-xdebug \
+ php-mongo \
+ php-redis \
  nodejs \
  yarn \
  ant \
