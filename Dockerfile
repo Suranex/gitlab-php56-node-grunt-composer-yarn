@@ -67,7 +67,6 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN composer selfupdate
 
 # Install node tools
-RUN npm install -g grunt
 RUN npm install -g grunt-cli
 RUN grunt --version
 
